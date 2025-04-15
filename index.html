@@ -9,23 +9,25 @@
     body {
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
-      background: linear-gradient(135deg, #1a1a1a, #222222), url('https://wallpapercave.com/wp/wp9661440.jpg');
-      background-size: cover;
-      background-blend-mode: overlay;
+      background: url('https://wallpapercave.com/wp/wp9121035.jpg') center/cover no-repeat;
       color: #fff;
       text-align: center;
-      padding: 40px 20px;
+      padding: 50px 20px;
+      background-attachment: fixed;
     }
 
     img.logo {
-      max-width: 140px;
+      max-width: 120px;
       margin-bottom: 25px;
+      border-radius: 50%;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
     }
 
     h1 {
-      font-size: 28px;
-      margin-bottom: 35px;
-      color: #00d0ff;
+      font-size: 30px;
+      color: #00e0ff;
+      margin-bottom: 40px;
+      text-shadow: 1px 1px 5px #000;
     }
 
     .button {
@@ -33,40 +35,35 @@
       align-items: center;
       justify-content: center;
       gap: 12px;
-      background-color: #1f1f1fdd;
-      color: white;
+      background-color: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(8px);
+      color: #fff;
       padding: 14px 20px;
-      margin: 12px auto;
-      border: none;
-      border-radius: 14px;
+      margin: 14px auto;
+      border: 1px solid #555;
+      border-radius: 20px;
       width: 90%;
-      max-width: 320px;
+      max-width: 300px;
       font-size: 17px;
       text-decoration: none;
       transition: all 0.3s ease;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
     }
 
     .button:hover {
-      background-color: #00bfff;
-      color: #000;
-      transform: translateY(-2px);
+      background-color: rgba(0, 208, 255, 0.2);
+      transform: translateY(-3px);
+      color: #00e0ff;
     }
 
     .icon {
       font-size: 20px;
     }
-
-    @media (max-width: 600px) {
-      h1 {
-        font-size: 22px;
-      }
-    }
   </style>
 </head>
 <body>
-  <img class="logo" src="105games-logo.png" alt="105Games Logo" />
 
+  <img class="logo" src="105games-logo.png" alt="105Games Logo" />
   <h1>Connect with 105Games</h1>
 
   <a href="https://www.facebook.com/profile.php?id=61563913678364&locale=ar_AR" target="_blank" class="button">
@@ -88,5 +85,6 @@
   <a href="mailto:105gamesps@gmail.com" class="button">
     <i class="fas fa-envelope icon"></i> Contact by Email
   </a>
+
 </body>
 </html>
