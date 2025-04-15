@@ -1,58 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Connect with 105Games</title>
   <style>
     body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #f4f4f4;
       margin: 0;
-      padding: 40px 20px;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #0f0f0f;
+      color: #fff;
       text-align: center;
+      padding: 40px 20px;
+    }
+
+    img.logo {
+      max-width: 180px;
+      margin-bottom: 20px;
     }
 
     h1 {
-      color: #222;
+      font-size: 26px;
       margin-bottom: 30px;
     }
 
     .button {
-      display: block;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      background-color: #1f1f1f;
+      color: #fff;
+      padding: 14px 20px;
+      margin: 12px auto;
+      border: 1px solid #444;
+      border-radius: 10px;
       width: 90%;
       max-width: 300px;
-      margin: 10px auto;
-      padding: 15px;
-      background-color: #007bff;
-      color: white;
-      text-decoration: none;
-      border-radius: 8px;
       font-size: 18px;
-      transition: background-color 0.3s ease;
+      text-decoration: none;
+      transition: all 0.3s ease;
     }
 
     .button:hover {
-      background-color: #0056b3;
+      background-color: #333;
+      transform: scale(1.03);
     }
 
-    .button.email {
-      background-color: #28a745;
+    .icon {
+      font-size: 22px;
     }
 
-    .button.email:hover {
-      background-color: #1e7e34;
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 22px;
+      }
     }
   </style>
 </head>
 <body>
+  <img class="logo" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAfQAAAH0CAYAAADL1t+KAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAFDm..." alt="105Games Logo" />
+  
   <h1>Connect with 105Games</h1>
 
-  <a href="https://www.facebook.com/profile.php?id=61563913678364&locale=ar_AR" target="_blank" class="button">📘 Facebook</a>
-  <a href="https://www.youtube.com/@105Gmaes" target="_blank" class="button">📺 YouTube</a>
-  <a href="https://x.com/105_Games" target="_blank" class="button">🐦 Twitter (X)</a>
-  <a href="https://www.tiktok.com/@105_games" target="_blank" class="button">🎵 TikTok</a>
-  <a href="mailto:105gamesps@gmail.com" class="button email">📧 Contact by Email</a>
+  <a href="https://www.facebook.com/profile.php?id=61563913678364&locale=ar_AR" target="_blank" class="button">
+    <span class="icon">📘</span> Facebook
+  </a>
 
+  <a href="https://www.youtube.com/@105Gmaes" target="_blank" class="button">
+    <span class="icon">📺</span> YouTube
+  </a>
+
+  <a href="https://x.com/105_Games" target="_blank" class="button">
+    <span class="icon">🐦</span> Twitter (X)
+  </a>
+
+  <a href="https://www.tiktok.com/@105_games" target="_blank" class="button">
+    <span class="icon">🎵</span> TikTok
+  </a>
+
+  <a href="mailto:105gamesps@gmail.com" class="button">
+    <span class="icon">📧</span> Contact by Email
+  </a>
 </body>
 </html>
