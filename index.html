@@ -4,51 +4,57 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Connect with 105Games</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
   <style>
     body {
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
-      background-color: #0f0f0f;
+      background: linear-gradient(135deg, #1a1a1a, #222222), url('https://wallpapercave.com/wp/wp9661440.jpg');
+      background-size: cover;
+      background-blend-mode: overlay;
       color: #fff;
       text-align: center;
       padding: 40px 20px;
     }
 
     img.logo {
-      max-width: 180px;
-      margin-bottom: 20px;
+      max-width: 140px;
+      margin-bottom: 25px;
     }
 
     h1 {
-      font-size: 26px;
-      margin-bottom: 30px;
+      font-size: 28px;
+      margin-bottom: 35px;
+      color: #00d0ff;
     }
 
     .button {
       display: flex;
       align-items: center;
       justify-content: center;
-      gap: 10px;
-      background-color: #1f1f1f;
-      color: #fff;
+      gap: 12px;
+      background-color: #1f1f1fdd;
+      color: white;
       padding: 14px 20px;
       margin: 12px auto;
-      border: 1px solid #444;
-      border-radius: 10px;
+      border: none;
+      border-radius: 14px;
       width: 90%;
-      max-width: 300px;
-      font-size: 18px;
+      max-width: 320px;
+      font-size: 17px;
       text-decoration: none;
       transition: all 0.3s ease;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
     }
 
     .button:hover {
-      background-color: #333;
-      transform: scale(1.03);
+      background-color: #00bfff;
+      color: #000;
+      transform: translateY(-2px);
     }
 
     .icon {
-      font-size: 22px;
+      font-size: 20px;
     }
 
     @media (max-width: 600px) {
@@ -58,29 +64,29 @@
     }
   </style>
 </head>
-<body><img class="logo" src="105games-logo.png" alt="105Games Logo" />
+<body>
+  <img class="logo" src="105games-logo.png" alt="105Games Logo" />
 
-  
   <h1>Connect with 105Games</h1>
 
   <a href="https://www.facebook.com/profile.php?id=61563913678364&locale=ar_AR" target="_blank" class="button">
-    <span class="icon">📘</span> Facebook
+    <i class="fab fa-facebook-f icon"></i> Facebook
   </a>
 
   <a href="https://www.youtube.com/@105Gmaes" target="_blank" class="button">
-    <span class="icon">📺</span> YouTube
+    <i class="fab fa-youtube icon"></i> YouTube
   </a>
 
   <a href="https://x.com/105_Games" target="_blank" class="button">
-    <span class="icon">🐦</span> Twitter (X)
+    <i class="fab fa-x-twitter icon"></i> Twitter (X)
   </a>
 
   <a href="https://www.tiktok.com/@105_games" target="_blank" class="button">
-    <span class="icon">🎵</span> TikTok
+    <i class="fab fa-tiktok icon"></i> TikTok
   </a>
 
   <a href="mailto:105gamesps@gmail.com" class="button">
-    <span class="icon">📧</span> Contact by Email
+    <i class="fas fa-envelope icon"></i> Contact by Email
   </a>
 </body>
 </html>
