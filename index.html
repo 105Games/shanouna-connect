@@ -9,7 +9,8 @@
     body {
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
-      background: url('https://i.ibb.co/jJrK1GW/bg-gaming-pattern.png') center/cover no-repeat fixed;
+      background: linear-gradient(180deg, rgba(0,0,0,0.85), rgba(0,0,0,0.95)), 
+                  url('background-stars.jpg') center/cover no-repeat fixed;
       color: #fff;
       text-align: center;
       padding: 50px 20px;
@@ -42,21 +43,17 @@
       text-decoration: none;
       color: #fff;
       transition: all 0.3s ease;
-      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+      background-color: rgba(255, 255, 255, 0.08);
+      backdrop-filter: blur(5px);
     }
 
     .button i {
       font-size: 18px;
     }
 
-    .button.facebook { background-color: #1877f2; }
-    .button.youtube { background-color: #ff0000; }
-    .button.twitter { background-color: #000000; }
-    .button.tiktok { background-color: #121212; }
-    .button.email { background-color: #333333; }
-
     .button:hover {
-      opacity: 0.9;
+      background-color: rgba(0, 208, 255, 0.15);
       transform: translateY(-2px);
     }
   </style>
@@ -66,23 +63,23 @@
   <img class="logo" src="105games-logo.png" alt="105Games Logo" />
   <h1>Connect with 105Games</h1>
 
-  <a href="https://www.facebook.com/profile.php?id=61563913678364&locale=ar_AR" target="_blank" class="button facebook">
+  <a href="https://www.facebook.com/profile.php?id=61563913678364&locale=ar_AR" target="_blank" class="button">
     <i class="fab fa-facebook-f"></i> Facebook
   </a>
 
-  <a href="https://www.youtube.com/@105Gmaes" target="_blank" class="button youtube">
+  <a href="https://www.youtube.com/@105Gmaes" target="_blank" class="button">
     <i class="fab fa-youtube"></i> YouTube
   </a>
 
-  <a href="https://x.com/105_Games" target="_blank" class="button twitter">
+  <a href="https://x.com/105_Games" target="_blank" class="button">
     <i class="fab fa-x-twitter"></i> Twitter (X)
   </a>
 
-  <a href="https://www.tiktok.com/@105_games" target="_blank" class="button tiktok">
+  <a href="https://www.tiktok.com/@105_games" target="_blank" class="button">
     <i class="fab fa-tiktok"></i> TikTok
   </a>
 
-  <a href="mailto:105gamesps@gmail.com" class="button email">
+  <a href="mailto:105gamesps@gmail.com" class="button">
     <i class="fas fa-envelope"></i> Contact by Email
   </a>
 
