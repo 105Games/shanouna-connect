@@ -14,24 +14,36 @@
       color: #fff;
       text-align: center;
       padding: 50px 20px;
+      animation: fadeIn 1.2s ease-in-out;
     }
 
-   img.logo {
-  max-width: 120px;
-  height: 120px;
-  object-fit: cover;
-  border-radius: 50%;
-  margin-bottom: 25px;
-  border: 2px solid #00e0ff;
-  box-shadow: 0 0 12px rgba(0, 224, 255, 0.4);
-}
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
 
+    img.logo {
+      max-width: 120px;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-bottom: 25px;
+      border: 2px solid #00e0ff;
+      box-shadow: 0 0 12px rgba(0, 224, 255, 0.4);
+    }
 
     h1 {
       font-size: 28px;
       color: #00cfff;
-      margin-bottom: 30px;
+      margin-bottom: 10px;
       text-shadow: 1px 1px 5px #000;
+    }
+
+    p.subtext {
+      color: #ccc;
+      font-size: 15px;
+      margin-top: -5px;
+      margin-bottom: 30px;
     }
 
     .button {
@@ -40,7 +52,7 @@
       justify-content: center;
       gap: 10px;
       padding: 14px 20px;
-      margin: 10px auto;
+      margin: 12px auto;
       border: none;
       border-radius: 12px;
       width: 90%;
@@ -61,6 +73,23 @@
     .button:hover {
       background-color: rgba(0, 208, 255, 0.15);
       transform: translateY(-2px);
+      color: #00e0ff;
+    }
+
+    footer {
+      margin-top: 50px;
+      font-size: 12px;
+      color: #555;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 22px;
+      }
+      .button {
+        font-size: 15px;
+        padding: 12px;
+      }
     }
   </style>
 </head>
@@ -68,6 +97,7 @@
 
   <img class="logo" src="105games-logo.png" alt="105Games Logo" />
   <h1>Connect with 105Games</h1>
+  <p class="subtext">Stay connected with us on all platforms</p>
 
   <a href="https://www.facebook.com/profile.php?id=61563913678364&locale=ar_AR" target="_blank" class="button">
     <i class="fab fa-facebook-f"></i> Facebook
@@ -88,6 +118,10 @@
   <a href="mailto:105gamesps@gmail.com" class="button">
     <i class="fas fa-envelope"></i> Contact by Email
   </a>
+
+  <footer>
+    © 2025 105Games. All rights reserved.
+  </footer>
 
 </body>
 </html>
